@@ -1,5 +1,5 @@
 <!--! vim: et ts=2 sts=2 sw=2 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:py="http://genshi.edgewall.org/"
@@ -23,9 +23,8 @@
       <h1>Development</h1>
       <p><span py:strip="True" i18n:msg="">
       Most of the project's content (wiki, bug tracker, source repository)
-      is available <a href="https://projets.iiens.net/projects/show/erebot">here</a>
-      (hosted by <a title="${'Administrateurs du Réseau Informatique et des Services aux Étudiants'}"
-      href="http://arise.iiens.net/">aRiSE</a>).
+      is available <a href="https://github.com/fpoirotte/Erebot">here</a>
+      (hosted by <a href="https://github.com/">github</a>).
       </span>
       <br/>
       I'd like to personally thank all the members of aRiSE for their dedicated
@@ -69,7 +68,7 @@
         i18n:msg="">Documentation (<a href="${urls.get('HTML doc', '?')}">Online</a> /
             <a href="${urls.get('PDF doc', '?')}">PDF</a> /
             <a href="${urls.get('Tarball doc', '?')}">HTML in tarball</a>)</p>
-      <p py:if="'Code Coverage' in urls" 
+      <p py:if="'Code Coverage' in urls"
         i18n:msg=""><a href="${urls['Code Coverage']}">Code coverage analysis</a></p>
       <p py:if="'PEAR Package' in urls"
         i18n:msg=""><a href="${urls['PEAR Package']}">PEAR package</a></p>
