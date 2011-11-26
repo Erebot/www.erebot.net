@@ -1,0 +1,34 @@
+<!--! vim: et ts=2 sts=2 sw=2 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+  <title>XML Namespaces</title>
+  <link type="text/css" rel="stylesheet" href="${tg.url('/css/xmlns/index.css')}"/>
+</head>
+
+<body>
+  ${sidebar_users()}
+  ${sidebar_developpers()}
+  ${sidebar_partners()}
+  <div id="xmlns">
+    <div>
+      <h1>Available namespaces</h1>
+      <p>
+      The following namespaces are available. Each link contains documentation
+      on what is and what is not allowed in the given namespace.
+      </p>
+      <ol>
+        <li><a href="${tg.url('/xmlns/erebot')}">Namespace for Erebot</a></li>
+        <li><a href="${tg.url('/xmlns/logging')}">Namespace for PLOP</a></li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>

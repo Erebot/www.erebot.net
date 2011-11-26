@@ -1,0 +1,495 @@
+# Translations template for Erebot.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the Erebot project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Erebot 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-08-04 00:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: erebot/controllers/error.py:26
+msgid "We're sorry but we weren't able to process this request."
+msgstr ""
+
+#: erebot/controllers/root.py:26
+msgid "Only for people with the \"manage\" permission"
+msgstr ""
+
+#: erebot/controllers/root.py:64
+msgid "success"
+msgstr ""
+
+#: erebot/controllers/root.py:65
+msgid "warnings"
+msgstr ""
+
+#: erebot/controllers/root.py:66
+msgid "failure"
+msgstr ""
+
+#: erebot/controllers/root.py:67
+msgid "skipped"
+msgstr ""
+
+#: erebot/controllers/root.py:68 erebot/controllers/root.py:69
+msgid "exception"
+msgstr ""
+
+#: erebot/controllers/root.py:70 erebot/controllers/root.py:71
+msgid "retry"
+msgstr ""
+
+#: erebot/controllers/root.py:90
+msgid "Wrong credentials"
+msgstr ""
+
+#: erebot/lib/login.py:18
+#, python-format
+msgid "Welcome back, %s!"
+msgstr ""
+
+#: erebot/lib/login.py:27
+msgid "We hope to see you soon!"
+msgstr ""
+
+#: erebot/templates/debug.html:11
+msgid "Sample Template, for looking at template locals"
+msgstr ""
+
+#: erebot/templates/debug.html:15
+msgid "All objects from locals():"
+msgstr ""
+
+#: erebot/templates/environ.html:11
+msgid "Learning TurboGears 2.1: Information about TG and WSGI"
+msgstr ""
+
+#: erebot/templates/environ.html:15
+msgid "The WSGI nature of the framework"
+msgstr ""
+
+#: erebot/templates/environ.html:16
+msgid ""
+"In this page you can see all the WSGI variables your request object has,\n"
+"       the ones in capital letters are required by the spec, then a sorted by"
+"\n"
+"       component list of variables provided by the Components, and at last\n"
+"       the \"wsgi.\" namespace with very useful information about your WSGI "
+"Server"
+msgstr ""
+
+#: erebot/templates/environ.html:20
+msgid "The keys in the environment are:"
+msgstr ""
+
+#: erebot/templates/error.html:11
+#, python-format
+msgid "A %(code)s error has occurred"
+msgstr ""
+
+#: erebot/templates/error.html:16
+#, python-format
+msgid "Error %(code)s"
+msgstr ""
+
+#: erebot/templates/footer.html:9
+#, python-format
+msgid ""
+"Erebot is a modular IRC bot written in PHP. © 2010-%(current_year)d "
+"www.erebot.net"
+msgstr ""
+
+#: erebot/templates/header.html:7
+msgid "Erebot"
+msgstr ""
+
+#: erebot/templates/header.html:8
+msgid "A modular IRC bot written in PHP"
+msgstr ""
+
+#: erebot/templates/master.html:28
+msgid "Welcome"
+msgstr ""
+
+#: erebot/templates/master.html:31 erebot/templates/buildbot/index.html:23
+#: erebot/templates/root/development.html:23
+msgid "Development"
+msgstr ""
+
+#: erebot/templates/master.html:38
+msgid "Admin"
+msgstr ""
+
+#: erebot/templates/sidebars.html:10
+msgid "Get started with Erebot"
+msgstr ""
+
+#: erebot/templates/sidebars.html:14
+msgid "Developpers corner"
+msgstr ""
+
+#: erebot/templates/sidebars.html:17
+msgid "Home"
+msgstr ""
+
+#: erebot/templates/sidebars.html:20
+msgid "Downloads"
+msgstr ""
+
+#: erebot/templates/sidebars.html:21
+msgid "User manual"
+msgstr ""
+
+#: erebot/templates/sidebars.html:28
+msgid "Developing Erebot"
+msgstr ""
+
+#: erebot/templates/sidebars.html:30
+msgid "API documentation"
+msgstr ""
+
+#: erebot/templates/sidebars.html:31
+msgid "Roadmap"
+msgstr ""
+
+#: erebot/templates/sidebars.html:32
+msgid "Bug Tracker"
+msgstr ""
+
+#: erebot/templates/sidebars.html:33
+msgid "SVN repository"
+msgstr ""
+
+#: erebot/templates/sidebars.html:34 erebot/templates/root/development.html:45
+msgid "Buildbot"
+msgstr ""
+
+#: erebot/templates/sidebars.html:35
+msgid "Namespaces"
+msgstr ""
+
+#: erebot/templates/sidebars.html:42
+msgid "Partners"
+msgstr ""
+
+#: erebot/templates/sidebars.html:44
+msgid "TurboGears"
+msgstr ""
+
+#: erebot/templates/sidebars.html:45
+msgid "Powered by TurboGears 2"
+msgstr ""
+
+#: erebot/templates/sidebars.html:48
+msgid "Valid XHTML 1.0"
+msgstr ""
+
+#: erebot/templates/sidebars.html:49
+msgid "Validate now"
+msgstr ""
+
+#: erebot/templates/sidebars.html:53
+msgid "Project code hosted by aRiSE"
+msgstr ""
+
+#: erebot/templates/sidebars.html:59
+msgid "Erebot on Ohloh"
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:13
+#: erebot/templates/root/development.html:13
+msgid "Participate in Erebot's development."
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:24
+#: erebot/templates/root/development.html:24
+msgid ""
+"Most of the project's content (wiki, bug tracker, source repository)\n"
+"      is available [1:here]\n"
+"      (hosted by [2:aRiSE])."
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:30
+#: erebot/templates/root/development.html:30
+msgid ""
+"I'd like to personally thank all the members of aRiSE for their dedicated\n"
+"      work on a daily basis."
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:35
+#: erebot/templates/root/development.html:35
+msgid ""
+"The latest version of Erebot's code is kept under Subversion and may\n"
+"        be checked out anonymously using the following command:"
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:45
+msgid "Documentation"
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:47
+msgid ""
+"You can read the latest version of the documentation\n"
+"          [1:here]."
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:52
+msgid ""
+"You may also download it as a\n"
+"          [1:PDF manual]."
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:60
+msgid "Builbot status"
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:62
+#: erebot/templates/root/development.html:54
+msgid ""
+"You may track the buildbot status of the project\n"
+"          [1:here]."
+msgstr ""
+
+#: erebot/templates/buildbot/index.html:67
+msgid "Latest build status for trunk was:"
+msgstr ""
+
+#: erebot/templates/plop/index.html:13
+msgid "Python Logging On PHP"
+msgstr ""
+
+#: erebot/templates/plop/index.html:23
+msgid "What is PLOP?"
+msgstr ""
+
+#: erebot/templates/plop/index.html:24
+msgid ""
+"PLOP is a port of the Python logging module (which is itself a port of Java's"
+" log4j) on PHP."
+msgstr ""
+
+#: erebot/templates/plop/index.html:25
+msgid ""
+"The code is already featureful compared to other PHP logging systems and can "
+"be easily extended\n"
+"      to fit one's specific needs."
+msgstr ""
+
+#: erebot/templates/plop/index.html:32
+msgid "Differences from the Python API"
+msgstr ""
+
+#: erebot/templates/plop/index.html:33
+msgid ""
+"While most of the API is compatible between the Python logging module and "
+"PLOP,\n"
+"        there are a few differences listed below."
+msgstr ""
+
+#: erebot/templates/plop/index.html:39
+msgid "See the associated ticket"
+msgstr ""
+
+#: erebot/templates/plop/index.html:38
+msgid ""
+"Parameters for handlers in the configuration file are not yet implemented.\n"
+"          \\[[1:#260]\\]"
+msgstr ""
+
+#: erebot/templates/plop/index.html:41
+msgid "PLOP can also read its configuration from an XML file."
+msgstr ""
+
+#: erebot/templates/plop/index.html:42
+msgid ""
+"Not all handlers are supported by PLOP (especially the Windows Events Log "
+"handler)."
+msgstr ""
+
+#: erebot/templates/plop/index.html:47
+msgid "Relation with Erebot"
+msgstr ""
+
+#: erebot/templates/plop/index.html:48
+msgid ""
+"PLOP is used on Erebot to provide logging features.\n"
+"        The XML configuration format is used.[1:]\n"
+"        You can find out more about this [2:here]."
+msgstr ""
+
+#: erebot/templates/root/development.html:47
+msgid ""
+"The project uses [1:Buildbot]\n"
+"          to automatically generate a bunch of files from\n"
+"          the latest version of the code."
+msgstr ""
+
+#: erebot/templates/root/development.html:60
+msgid "Latest build status for the trunk:"
+msgstr ""
+
+#: erebot/templates/root/development.html:67
+msgid "Generated files"
+msgstr ""
+
+#: erebot/templates/root/development.html:68
+msgid ""
+"Documentation ([1:Online] /\n"
+"            [2:PDF] /\n"
+"            [3:HTML in tarball])"
+msgstr ""
+
+#: erebot/templates/root/development.html:72
+msgid "[1:Code coverage analysis]"
+msgstr ""
+
+#: erebot/templates/root/development.html:74
+msgid "[1:PEAR package]"
+msgstr ""
+
+#: erebot/templates/root/index.html:12
+msgid "Erebot - PHP IRC bot"
+msgstr ""
+
+#: erebot/templates/root/index.html:20
+msgid "Presentation"
+msgstr ""
+
+#: erebot/templates/root/index.html:21
+msgid "Erebot is an IRC bot written in PHP and released under GPL v3.0+"
+msgstr ""
+
+#: erebot/templates/root/index.html:22
+msgid ""
+"First written as an exercise, the project became an original alternative\n"
+"      to other bots (eg. rbot) as it grew larger."
+msgstr ""
+
+#: erebot/templates/root/index.html:25
+msgid ""
+"The code features advanced concepts of PHP (sockets, XML handling, custom\n"
+"      streams, i18n, process manipulation, etc.)."
+msgstr ""
+
+#: erebot/templates/root/index.html:29
+msgid ""
+"PHP 5(.3) is used as the base version, though the code may run under\n"
+"      PHP 5.2.1+ with some work."
+msgstr ""
+
+#: erebot/templates/root/index.html:32
+msgid ""
+"Whenever possible, we try to avoid PHP 5.3.0-specific features\n"
+"      (like namespaces, late static binding, etc.)."
+msgstr ""
+
+#: erebot/templates/root/index.html:36
+msgid ""
+"We only use OOP (Object-Oriented Programming) to ensure ease of reading --\n"
+"      no spaghetti code."
+msgstr ""
+
+#: erebot/templates/root/index.html:39
+msgid ""
+"And because we think QA is the key to making great softwares, the code ships\n"
+"      with several unit tests."
+msgstr ""
+
+#: erebot/templates/root/index.html:43
+msgid ""
+"Erebot has a very modular codebase and currently supports the following "
+"features:"
+msgstr ""
+
+#: erebot/templates/root/index.html:45
+msgid ""
+"Plain-text and secure connections (through SSL/TLS, with some support for the"
+" STARTTLS extension)"
+msgstr ""
+
+#: erebot/templates/root/index.html:46
+msgid "Channel auto-join upon connection"
+msgstr ""
+
+#: erebot/templates/root/index.html:47
+msgid "Auto-reconnecting after the link gets down, combined with a lag checker"
+msgstr ""
+
+#: erebot/templates/root/index.html:48
+msgid ""
+"Internationalization of most messages, with the possibility to set different\n"
+"        languages for different channels/servers/networks"
+msgstr ""
+
+#: erebot/templates/root/index.html:52
+msgid "A few popular games (Uno, Gang of Four, Roulette, Countdown)"
+msgstr ""
+
+#: erebot/templates/root/index.html:53
+msgid "Some tools (a TV timetable, a calculator, etc.)"
+msgstr ""
+
+#: erebot/templates/root/index.html:54
+msgid "And many other fearures you can discover by downloading the code!"
+msgstr ""
+
+#: erebot/templates/root/index.html:56
+msgid "We welcome additional ideas for new features and modules."
+msgstr ""
+
+#: erebot/templates/root/login.html:12
+msgid "Login Form"
+msgstr ""
+
+#: erebot/templates/root/login.html:19
+msgid "Login"
+msgstr ""
+
+#: erebot/templates/root/login.html:20
+msgid "Username:"
+msgstr ""
+
+#: erebot/templates/root/login.html:21
+msgid "Password:"
+msgstr ""
+
+#: erebot/templates/xmlns/erebot.html:12
+msgid "Erebot XML namespace"
+msgstr ""
+
+#: erebot/templates/xmlns/index.html:12
+msgid "XML Namespaces"
+msgstr ""
+
+#: erebot/templates/xmlns/index.html:22
+msgid "Available namespaces"
+msgstr ""
+
+#: erebot/templates/xmlns/index.html:23
+msgid ""
+"The following namespaces are available. Each link contains documentation\n"
+"      on what is and what is not allowed in the given namespace."
+msgstr ""
+
+#: erebot/templates/xmlns/index.html:28
+msgid "Namespace for Erebot"
+msgstr ""
+
+#: erebot/templates/xmlns/index.html:29
+msgid "Namespace for PLOP"
+msgstr ""
+
+#: erebot/templates/xmlns/logging.html:12
+msgid "PLOP XML namespace"
+msgstr ""
+

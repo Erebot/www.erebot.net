@@ -1,0 +1,60 @@
+<!--! vim: et ts=2 sts=2 sw=2 -->
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      py:strip="">
+
+<?python import random ?>
+
+<py:def function="sidebar_users">
+  <div class="sidebar">
+    <div>Get started with Erebot</div>
+    <ul class="links">
+      <li py:choose="">
+        <span py:when="tmpl_context.page == 'erebot.controllers.root:index'" py:strip="">
+          <a href="${tg.url('/development')}">Developpers corner</a>
+        </span>
+        <span py:otherwise="" py:strip="">
+          <a href="${tg.url('/')}">Home</a>
+        </span>
+      </li>
+      <li><a href="https://projets.iiens.net/projects/list_files/erebot">Downloads</a></li>
+      <li><a href="https://projets.iiens.net/wiki/erebot">User manual</a></li>
+    </ul>
+  </div>
+</py:def>
+
+<py:def function="sidebar_developpers">
+  <div class="sidebar">
+    <div>Developing Erebot</div>
+    <ul class="links">
+      <li><a href="https://buildbot.erebot.net/doc/html/">API documentation</a></li>
+      <li><a href="https://projets.iiens.net/projects/roadmap/erebot">Roadmap</a></li>
+      <li><a href="https://projets.iiens.net/projects/erebot/issues">Bug Tracker</a></li>
+      <li><a href="https://projets.iiens.net/repositories/show/erebot">SVN repository</a></li>
+      <li><a href="https://buildbot.erebot.net/">Buildbot</a></li>
+      <li><a href="${tg.url('/xmlns/')}">Namespaces</a></li>
+    </ul>
+  </div>
+</py:def>
+
+<py:def function="sidebar_partners">
+  <div class="sidebar">
+    <div>Other</div>
+    <div class="sidelogo">
+      <img src="${tg.url('/images/turbogears.png')}" alt="TurboGears" />
+      <p><a href="http://www.turbogears.org/2.0/">Powered by TurboGears 2</a></p>
+    </div>
+    <div class="sidelogo">
+      <img src="${tg.url('/images/valid-xhtml10.png')}" alt="Valid XHTML 1.0" />
+      <p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.erebot.net">Validate now</a></p>
+    </div>
+    <div class="sidelogo">
+      <div id="ohloh">
+        <script type="text/javascript" src="https://www.ohloh.net/p/485882/widgets/project_users.js?style=${['green', 'blue', 'rainbow', 'gray', ''][random.randint(0,4)]}"></script>
+      </div>
+      <p><a href="https://www.ohloh.net/p/Erebot">Erebot on Ohloh</a></p>
+    </div>
+  </div>
+</py:def>
+
+</html>

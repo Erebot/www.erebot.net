@@ -1,0 +1,36 @@
+/* vim: noet ts=4 sts=4 sw=4 */
+
+#flash, .notice {
+	font-size: 120%;
+	font-weight: bolder;
+	margin: 0 auto 0.5em;
+	width: 680px;
+}
+
+#flash div, .notice {
+	padding: 20px 15px 20px 65px;
+}
+
+#flash .ok {
+	background: #D8ECD8 url(../images/ok.png) no-repeat scroll 10px center;
+}
+
+#flash .warning {
+	background: #FFF483 url(../images/warning.png) no-repeat scroll 10px center;
+}
+
+#flash .error {
+	background: #F9C5C1 url(../images/error.png) no-repeat scroll 10px center;
+}
+
+#flash .alert,
+#flash .info,
+.notice {
+	background: #EEEEFF url(../images/info.png) no-repeat scroll 10px center;
+}
+
+.fielderror {
+	color: red;
+	font-weight: bold;
+}
+

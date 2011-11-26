@@ -1,0 +1,79 @@
+<!--! vim: et ts=2 sts=2 sw=2 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:i18n="http://genshi.edgewall.org/i18n"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+  <title>Participate in Erebot's development.</title>
+  <link type="text/css" rel="stylesheet" href="${tg.url('/css/root/development.css')}"/>
+</head>
+
+<body>
+  ${sidebar_users()}
+  ${sidebar_developpers()}
+  ${sidebar_partners()}
+  <div id="development">
+    <div>
+      <h1>Development</h1>
+      <p><span py:strip="True" i18n:msg="">
+      Most of the project's content (wiki, bug tracker, source repository)
+      is available <a href="https://projets.iiens.net/projects/show/erebot">here</a>
+      (hosted by <a title="${'Administrateurs du Réseau Informatique et des Services aux Étudiants'}"
+      href="http://arise.iiens.net/">aRiSE</a>).
+      </span>
+      <br/>
+      I'd like to personally thank all the members of aRiSE for their dedicated
+      work on a daily basis.
+      </p>
+
+      <p>
+        The latest version of Erebot's code is kept under Subversion and may
+        be checked out anonymously using the following command:
+        <span id="checkout">
+          ${'svn co http://svn.iiens.net/svn/erebot Erebot'}
+        </span>
+      </p>
+    </div>
+
+    <div>
+      <h1>Buildbot</h1>
+      <p>
+        <span py:strip="True" i18n:msg="">
+          The project uses <a href="http://buildbot.net/">Buildbot</a>
+          to automatically generate a bunch of files from
+          the latest version of the code.
+        </span>
+        <br/>
+
+        <span py:strip="True" i18n:msg="">
+          You may track the buildbot status of the project
+          <a href="https://buildbot.erebot.net/">here</a>.
+        </span>
+      </p>
+
+      <p>
+        Latest build status for the trunk:
+        <span id="Erebot_trunk" class="status_${status_class}">${status_text}</span>
+      </p>
+    </div>
+
+    <div>
+      <h1>Generated files</h1>
+      <p py:if="'HTML doc' in urls"
+        i18n:msg="">Documentation (<a href="${urls.get('HTML doc', '?')}">Online</a> /
+            <a href="${urls.get('PDF doc', '?')}">PDF</a> /
+            <a href="${urls.get('Tarball doc', '?')}">HTML in tarball</a>)</p>
+      <p py:if="'Code Coverage' in urls" 
+        i18n:msg=""><a href="${urls['Code Coverage']}">Code coverage analysis</a></p>
+      <p py:if="'PEAR Package' in urls"
+        i18n:msg=""><a href="${urls['PEAR Package']}">PEAR package</a></p>
+    </div>
+  </div>
+</body>
+</html>

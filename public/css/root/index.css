@@ -1,0 +1,15 @@
+/* vim: noet ts=4 sts=4 sw=4 */
+
+#index p {
+	margin: 1em;
+}
+
+#index li {
+	margin-left: 3em;
+	list-style: disc;
+}
+
+#index h1 {
+	font-weight: bold;
+}
+

@@ -1,0 +1,19 @@
+/* vim: noet ts=4 sts=4 sw=4 */
+
+#plop > div {
+	margin-bottom: 2em;
+}
+
+#plop p {
+	margin: 1em;
+}
+
+#plop li {
+	margin-left: 3em;
+	list-style: disc;
+}
+
+#plop h1 {
+	font-weight: bold;
+}
+

@@ -1,0 +1,19 @@
+/* vim: noet ts=4 sts=4 sw=4 */
+
+#xmlns > div {
+	margin-bottom: 2em;
+}
+
+#xmlns p {
+	margin: 1em;
+}
+
+#xmlns li {
+	margin-left: 3em;
+	list-style: disc;
+}
+
+#xmlns h1 {
+	font-weight: bold;
+}
+

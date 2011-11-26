@@ -1,0 +1,57 @@
+/* vim: noet ts=4 sts=4 sw=4 */
+
+#development > div {
+	margin-bottom: 2em;
+}
+
+#development p {
+	margin: 1em;
+}
+
+span#checkout {
+	border: 1px solid #cce;
+	background-color: #eee;
+	margin: 0.5em;
+	margin-left: 1.5em;
+	padding: 1em;
+	font-size: 88%;
+	margin-right: 250px;
+	font-weight: bold;
+	display: block;
+}
+
+#development h1 {
+	font-weight: bold;
+}
+
+#Erebot_trunk {
+	padding: 0.2em 0.5em;
+	font-weight: bold;
+}
+
+#Erebot_trunk.status_success {
+	color: white;
+	background-color: green;
+}
+
+#Erebot_trunk.status_warnings {
+	color: black;
+	background-color: orange;
+}
+
+#Erebot_trunk.status_failure {
+	color: black;
+	background-color: red;
+}
+
+#Erebot_trunk.status_exception {
+	color: black;
+	background-color: violet;
+}
+
+#Erebot_trunk.status_skipped,
+#Erebot_trunk.status_retry {
+	color: black;
+	background-color: gray;
+}
+

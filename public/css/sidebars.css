@@ -1,0 +1,36 @@
+/* vim: noet ts=4 sts=4 sw=4 */
+
+.sidelogo {
+	text-align: center;
+	margin: 10px;
+}
+
+.sidebar {
+	border: 1px solid #cce;
+	background-color: #eee;
+	margin: 0.5em;
+	margin-left: 1.5em;
+	padding: 1em;
+	float: right;
+	width: 200px;
+	font-size: 88%;
+	clear: right;
+}
+
+.sidebar ul {
+	margin-left: 1.5em;
+	padding-left: 0;
+}
+
+.sidebar > div {
+	font-weight: bold;
+}
+
+.sidebar > div.sidelogo {
+	font-weight: normal;
+}
+
+#ohloh > a {
+	margin: auto;
+}
+

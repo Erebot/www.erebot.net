@@ -1,0 +1,59 @@
+<!--! vim: et ts=2 sts=2 sw=2 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+  <title>Erebot - PHP IRC bot</title>
+  <link type="text/css" rel="stylesheet" href="${tg.url('/css/root/index.css')}"/>
+</head>
+
+<body>
+  ${sidebar_users()}
+  ${sidebar_partners()}
+  <div id="index">
+    <h1>Presentation</h1>
+    <p>Erebot is an IRC bot written in PHP and released under GPL v3.0+</p>
+    <p>
+      First written as an exercise, the project became an original alternative
+      to other bots (eg. rbot) as it grew larger.
+      <br/>
+      The code features advanced concepts of PHP (sockets, XML handling, custom
+      streams, i18n, process manipulation, etc.).
+    </p>
+    <p>
+      PHP 5(.3) is used as the base version, though the code may run under
+      PHP 5.2.1+ with some work.
+      <br/>
+      Whenever possible, we try to avoid PHP 5.3.0-specific features
+      (like namespaces, late static binding, etc.).
+    </p>
+    <p>
+      We only use OOP (Object-Oriented Programming) to ensure ease of reading --
+      no spaghetti code.
+      <br/>
+      And because we think QA is the key to making great softwares, the code ships
+      with several unit tests.
+    </p>
+    <p>Erebot has a very modular codebase and currently supports the following features:</p>
+    <ul>
+      <li>Plain-text and secure connections (through SSL/TLS, with some support for the STARTTLS extension)</li>
+      <li>Channel auto-join upon connection</li>
+      <li>Auto-reconnecting after the link gets down, combined with a lag checker</li>
+      <li>
+        Internationalization of most messages, with the possibility to set different
+        languages for different channels/servers/networks
+      </li>
+      <li>A few popular games (Uno, Gang of Four, Roulette, Countdown)</li>
+      <li>Some tools (a TV timetable, a calculator, etc.)</li>
+      <li>And many other fearures you can discover by downloading the code!</li>
+    </ul>
+    <p>We welcome additional ideas for new features and modules.</p>
+  </div>
+</body>
+</html>

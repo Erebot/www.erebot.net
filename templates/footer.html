@@ -1,0 +1,13 @@
+<!--! vim: et ts=2 sts=2 sw=2 -->
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      py:strip="">
+<py:def function="footer">
+<?python from datetime import datetime ?>
+<div id="footer">
+  <div class="foottext">
+    <p>${_("Erebot is a modular IRC bot written in PHP. © 2010-%(current_year)d www.erebot.net") % {'current_year': datetime.now().year}}</p>
+  </div>
+</div>
+</py:def>    
+</html>
