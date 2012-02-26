@@ -50,6 +50,7 @@ setup(
         "rum",
         "TgRum",
         "Babel >=0.9.4",
+        "tg.devtools", # Required during bootstrap.
     ],
     setup_requires=["PasteScript >= 1.7"],
     paster_plugins=['PasteScript', 'Pylons', 'TurboGears2', 'tg.devtools'],
@@ -86,3 +87,4 @@ setup(
         ],
     zip_safe=False
 )
+
