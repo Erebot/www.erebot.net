@@ -45,46 +45,7 @@ class RootController(BaseController):
     @expose('erebot.templates.root.development')
     def development(self):
         """Prints information and links for development-related resources."""
-        import urllib2
-        import json
-
-        req = urllib2.Request(
-            'http://localhost:8010/json/builders/Core/builds/-1/?compact=1',
-            headers={'Content-Type': 'application/json'},
-        )
-        build = {}
-        urls = {}
-        try:
-            build = json.load(urllib2.urlopen(req), 'latin-1')
-        except urllib2.URLError:
-            pass
-
-        res = build.get('text', ['retry'])
-        for step in build.get('steps', {}):
-            if 'urls' in step:
-                urls.update(step['urls'])
-
-        mapping = {
-            'build successful': N_('success'),
-            'warnings':         N_('warnings'),
-            'failed':           N_('failure'),
-            'skipped':          N_('skipped'),
-            'exception':        N_('exception'),
-            'build exception':  N_('exception'),
-            'retry':            N_('retry'),
-            '':                 N_('retry'),
-        }
-
-        while ' '.join(res) not in mapping:
-            res.pop()
-        res = ' '.join(res)
-
-        return dict(
-            status_text=_(mapping[res]),
-            status_code=res,
-            status_class=mapping[res],
-            urls=urls,
-        )
+        return dict()
 
     @expose('erebot.templates.login')
     def login(self, came_from=url('/')):

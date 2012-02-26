@@ -26,17 +26,27 @@
       is available <a href="https://github.com/fpoirotte/Erebot">here</a>
       (hosted by <a href="https://github.com/">github</a>).
       </span>
-      <br/>
-      I'd like to personally thank all the members of aRiSE for their dedicated
-      work on a daily basis.
       </p>
 
       <p>
-        The latest version of Erebot's code is kept under Subversion and may
-        be checked out anonymously using the following command:
-        <span id="checkout">
-          ${'svn co http://svn.iiens.net/svn/erebot Erebot'}
+        The latest version of Erebot's code is available on github and may
+        be cloned using the following command:
+        <span id="vcs">
+          ${'git clone git://github.com/fpoirotte/Erebot.git'}
         </span>
+
+        This will create a local repository with the core files required
+        to run Erebot.
+        <br/>
+
+        You may also be interested in checking out the code of
+        <a href="http://fpoirotte.github.com/Erebot/Modules.html">other modules</a>.
+        <br/>
+
+        Last but not least, the
+        <a href="http://fpoirotte.github.com/Erebot/">online documentation</a>
+        contains additional information that you be useful to you,
+        like a list of required dependencies for Erebot.
       </p>
     </div>
 
@@ -45,34 +55,18 @@
       <p>
         <span py:strip="True" i18n:msg="">
           The project uses <a href="http://buildbot.net/">Buildbot</a>
-          to automatically generate a bunch of files from
-          the latest version of the code.
+          to automatically generate a bunch of files from the latest version
+          of the code.
         </span>
         <br/>
 
         <span py:strip="True" i18n:msg="">
-          You may track the buildbot status of the project
-          <a href="https://buildbot.erebot.net/">here</a>.
+          You may follow the current state of every Erebot component on our
+          <a href="https://buildbot.erebot.net/components">Continuous Integration server</a>
         </span>
       </p>
-
-      <p>
-        Latest build status for the trunk:
-        <span id="Erebot_trunk" class="status_${status_class}">${status_text}</span>
-      </p>
-    </div>
-
-    <div>
-      <h1>Generated files</h1>
-      <p py:if="'HTML doc' in urls"
-        i18n:msg="">Documentation (<a href="${urls.get('HTML doc', '?')}">Online</a> /
-            <a href="${urls.get('PDF doc', '?')}">PDF</a> /
-            <a href="${urls.get('Tarball doc', '?')}">HTML in tarball</a>)</p>
-      <p py:if="'Code Coverage' in urls"
-        i18n:msg=""><a href="${urls['Code Coverage']}">Code coverage analysis</a></p>
-      <p py:if="'PEAR Package' in urls"
-        i18n:msg=""><a href="${urls['PEAR Package']}">PEAR package</a></p>
     </div>
   </div>
 </body>
 </html>
+
