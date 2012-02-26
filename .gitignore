@@ -1,3 +1,11 @@
+bin/
+db/
+ez_setup/
+Erebot.egg-info/
+include/
+lib/
+startup/
+
 *.pyc
 *.pyo
 *.mo

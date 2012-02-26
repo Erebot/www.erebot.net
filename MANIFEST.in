@@ -1,0 +1,4 @@
+recursive-include erebot/public *
+include erebot/public/favicon.ico
+recursive-include erebot/i18n *
+recursive-include erebot/templates *
