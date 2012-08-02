@@ -1,13 +1,22 @@
 bin/
 db/
 ez_setup/
-Erebot.egg-info/
 include/
 lib/
 startup/
 
+# Compiled files.
 *.pyc
 *.pyo
 *.mo
+
+# Backup files.
 *.*~
 *.*.old
+
+# Configuration files.
+*.ini
+
+# egg-info & eggs.
+Erebot.egg-info/
+Paste*.egg
