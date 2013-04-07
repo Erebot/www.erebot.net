@@ -1,22 +1,27 @@
 Installation and setup
 ======================
 
-Clone the website's repository::
+Create a new virtualenv::
 
-    $ git clone git://github.com/fpoirotte/www.erebot.net.git
+    $ virtualenv --no-site-packages tg2env.
+
+Go into that environment and activate it::
+
+    $ cd tg2env && source bin/activate
+
+Install the dependencies required to bootstrap the site::
+
+    $ easy_install -i http://tg.gy/current tg.devtools
+
+Now, clone the website's repository::
+
+    $ git clone git://github.com/Erebot/www.erebot.net.git
 
 This will create a directory named "www.erebot.net" in the current directory.
 
-Go into that directory and create a new virtualenv in it::
+Go into that directory and "develop" the project::
 
-    $ cd www.erebot.net/
-    $ virtualenv --no-site-packages -p python2.6 .
-
-Replace ``python2.6`` with whatever version of Python you want to use.
-
-Now, run::
-
-    $ bin/python setup.py develop
+    $ cd www.erebot.net &&  python setup.py develop -i http://tg.gy/current
 
 This will download all required dependencies in the virtual environment
 that we just created.
@@ -26,7 +31,7 @@ To do so, we will first create a new configuration file.
 You may start off by copying the example configuration file provided with
 the git clone::
 
-    $ cp erebot/config/deployment.ini_tmpl development.ini
+    $ cp -f erebot/config/deployment.ini_tmpl development.ini
 
 Now use whatever editor you like to adapt development.ini
 to suit your environment.
@@ -34,12 +39,12 @@ to suit your environment.
 Second, we must create machine object (.mo) files from the translations
 catalogs that ship with Erebot's website::
 
-    $ bin/python setup.py compile_catalog
+    $ python setup.py compile_catalog
 
 Last but not least, we will create the (local, SQLite-based) database
 for the website::
 
-    $ bin/paster setup-app development.ini
+    $ paster setup-app development.ini
 
 You're now ready to go.
 
@@ -49,11 +54,15 @@ Testing changes locally
 
 Go to your local clone::
 
-    $ cd ~/www.erebot.net/
+    $ cd .../www.erebot.net/
+
+Activate the virtual environment::
+
+    $ source ../bin/activate
 
 Start the paste http server::
 
-    $ bin/paster serve development.ini
+    $ paster serve development.ini
 
 This will display some information on the console, like so::
 
@@ -68,7 +77,7 @@ in package files (or its dependencies) are saved.
 This can be achieved easily by adding the ``--reload`` option
 to the ``serve`` command::
 
-    $ bin/paster serve --reload development.ini
+    $ paster serve --reload development.ini
 
 
 Contributing
@@ -86,6 +95,6 @@ The procedure to do so is quite simple:
 #.  Go to step 3 and repeat. ;)
 
 ..  warning::
-    A pull request with no tests has less chances to be accepted than one
+    A pull request with no tests has less chances of being accepted than one
     that is fully tested and properly documented.
 

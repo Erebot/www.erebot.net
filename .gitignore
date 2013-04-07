@@ -7,9 +7,6 @@
 *.*~
 *.*.old
 
-# Configuration files.
-*.ini
-
 # egg-info & eggs.
 Erebot.egg-info/
 Paste*.egg
