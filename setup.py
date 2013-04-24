@@ -51,7 +51,7 @@ setup(
 #        "TgRum",
         "Babel >=0.9.4",
         "tg.devtools", # Required during bootstrap.
-        "MySQL-python <= 1.2.2",
+        "MySQL-python <= 1.2.3",
     ],
     setup_requires=["PasteScript >= 1.7"],
     paster_plugins=['PasteScript', 'Pylons', 'TurboGears2', 'tg.devtools'],
