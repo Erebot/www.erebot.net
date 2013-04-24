@@ -47,8 +47,8 @@ setup(
         "repoze.who==1.0.19",
         "tgext.admin >= 0.3.9",
         "tw.forms",
-        "rum",
-        "TgRum",
+#        "rum",
+#        "TgRum",
         "Babel >=0.9.4",
         "tg.devtools", # Required during bootstrap.
     ],
