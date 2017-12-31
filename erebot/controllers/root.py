@@ -9,11 +9,9 @@ from pkg_resources import resource_filename
 from erebot import model
 
 from erebot.lib.base import BaseController
-#from tgrum import RumAlchemyController
 from erebot.controllers.error import ErrorController
 from erebot.controllers.plop import PlopController
 from erebot.controllers.xmlns import XmlnsController
-from erebot.controllers.buildbot import BuildbotController
 
 __all__ = ['RootController']
 
@@ -22,18 +20,6 @@ class RootController(BaseController):
     The root controller for the Erebot application.
     """
     error = ErrorController()
-#    admin = RumAlchemyController(model, predicates.has_permission(
-#        'manage', msg=l_('Only for people with the "manage" permission')),
-#        resource_filename('erebot.templates', ''), config={
-#            'rum.translator': {
-#                'use': 'erebot',
-#            },
-#            'templating': {
-#                'renderer': 'erebot',
-#            },
-#        }
-#    )
-    buildbot = BuildbotController()
     plop = PlopController()
     xmlns = XmlnsController()
 
