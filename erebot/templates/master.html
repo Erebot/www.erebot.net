@@ -33,10 +33,6 @@
       class="${('', 'active')[tmpl_context.page=='erebot.controllers.plop:index']}"
       title="${'Python Logging On PHP'}"
       href="${tg.url('/plop')}">${'PLOP'}</a></li>
-    <span py:if="tg.auth_stack_enabled" py:strip="True">
-      <li id="admin" class="loginlogout"><a href="${tg.url('/admin')}"
-        class="${('', 'active')[tmpl_context.page=='']}">Admin</a></li>
-    </span>
   </ul>
   <div id="content">
     <py:with vars="flash=tg.flash_obj.render('flash', use_js=False)">
