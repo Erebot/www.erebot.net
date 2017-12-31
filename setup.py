@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 #quckstarted Options:
 #
-# sqlalchemy: True
-# auth:       sqlalchemy
 # mako:       False
 #
 #
@@ -20,10 +18,7 @@ testpkgs=['WebTest >= 1.2.3',
                'nose',
                'coverage',
                'wsgiref',
-               'repoze.who-testutil >= 1.0.1',
                ]
-if sys.version_info[:2] == (2,4):
-    testpkgs.extend(['hashlib', 'pysqlite'])
 
 setup(
     name='Erebot',
@@ -35,23 +30,9 @@ setup(
     install_requires=[
         "TurboGears2 >= 2.1.1",
         "Genshi",
-        "zope.sqlalchemy >= 0.4",
-        "repoze.tm2 >= 1.0a5",
-        "sqlalchemy",
-        "sqlalchemy-migrate",
-        "repoze.what-quickstart",
-        "repoze.what >= 1.0.8",
-        "repoze.who-friendlyform >= 1.0.4",
-        "repoze.what-pylons >= 1.0",
-        "repoze.what.plugins.sql",
-        "repoze.who==1.0.19",
-        "tgext.admin >= 0.3.9",
         "tw.forms",
-#        "rum",
-#        "TgRum",
         "Babel >=0.9.4",
         "tg.devtools", # Required during bootstrap.
-        "MySQL-python <= 1.2.3",
     ],
     setup_requires=["PasteScript >= 1.7"],
     paster_plugins=['PasteScript', 'Pylons', 'TurboGears2', 'tg.devtools'],
@@ -73,15 +54,6 @@ setup(
 
     [paste.app_install]
     main = pylons.util:PylonsInstaller
-
-    [distutils.commands]
-    update_catalog = erebot.lib.babel:update_catalog
-
-    [rum.translator]
-    erebot = erebot.lib.rum:ErebotRumTranslator
-
-    [rum.renderers]
-    erebot = erebot.lib.rum:ErebotRumGenshiRenderer
     """,
     dependency_links=[
         "http://www.turbogears.org/2.1/downloads/current/"

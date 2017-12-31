@@ -10,3 +10,4 @@
 # egg-info & eggs.
 Erebot.egg-info/
 Paste*.egg
+.eggs

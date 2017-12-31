@@ -2,7 +2,6 @@
 """PLOP Controller"""
 
 from tg import expose
-from repoze.what import predicates
 
 from erebot.lib.base import BaseController
 

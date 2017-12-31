@@ -7,51 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Erebot 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-08-04 00:28+0200\n"
+"POT-Creation-Date: 2017-12-31 15:02+0100\n"
 "PO-Revision-Date: 2011-08-04 00:29+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: erebot/controllers/error.py:26
 msgid "We're sorry but we weren't able to process this request."
 msgstr "We're sorry but we weren't able to process this request."
-
-#: erebot/controllers/root.py:26
-msgid "Only for people with the \"manage\" permission"
-msgstr "Only for people with the \"manage\" permission"
-
-#: erebot/controllers/root.py:64
-msgid "success"
-msgstr "success"
-
-#: erebot/controllers/root.py:65
-msgid "warnings"
-msgstr "warnings"
-
-#: erebot/controllers/root.py:66
-msgid "failure"
-msgstr "failure"
-
-#: erebot/controllers/root.py:67
-msgid "skipped"
-msgstr "skipped"
-
-#: erebot/controllers/root.py:68 erebot/controllers/root.py:69
-msgid "exception"
-msgstr "exception"
-
-#: erebot/controllers/root.py:70 erebot/controllers/root.py:71
-msgid "retry"
-msgstr "retry"
-
-#: erebot/controllers/root.py:90
-msgid "Wrong credentials"
-msgstr "Wrong credentials"
 
 #: erebot/lib/login.py:18
 #, python-format
@@ -131,14 +100,9 @@ msgstr "A modular IRC bot written in PHP"
 msgid "Welcome"
 msgstr "Welcome"
 
-#: erebot/templates/master.html:31 erebot/templates/buildbot/index.html:23
-#: erebot/templates/root/development.html:23
+#: erebot/templates/master.html:31 erebot/templates/root/development.html:23
 msgid "Development"
 msgstr "Development"
-
-#: erebot/templates/master.html:38
-msgid "Admin"
-msgstr "Admin"
 
 #: erebot/templates/sidebars.html:10
 msgid "Get started with Erebot"
@@ -153,141 +117,62 @@ msgid "Home"
 msgstr "Home"
 
 #: erebot/templates/sidebars.html:20
-msgid "Downloads"
-msgstr "Downloads"
-
-#: erebot/templates/sidebars.html:21
-msgid "User manual"
-msgstr "User manual"
-
-#: erebot/templates/sidebars.html:28
-msgid "Developing Erebot"
-msgstr "Developing Erebot"
-
-#: erebot/templates/sidebars.html:30
-msgid "API documentation"
-msgstr "API documentation"
-
-#: erebot/templates/sidebars.html:31
-msgid "Roadmap"
-msgstr "Roadmap"
-
-#: erebot/templates/sidebars.html:32
-msgid "Bug Tracker"
-msgstr "Bug Tracker"
-
-#: erebot/templates/sidebars.html:33
-msgid "SVN repository"
-msgstr "SVN repository"
-
-#: erebot/templates/sidebars.html:34 erebot/templates/root/development.html:45
-msgid "Buildbot"
-msgstr "Buildbot"
-
-#: erebot/templates/sidebars.html:35
-msgid "Namespaces"
-msgstr "Namespaces"
-
-#: erebot/templates/sidebars.html:42
-msgid "Partners"
-msgstr "Partners"
-
-#: erebot/templates/sidebars.html:44
-msgid "TurboGears"
-msgstr "TurboGears"
-
-#: erebot/templates/sidebars.html:45
-msgid "Powered by TurboGears 2"
-msgstr "Powered by TurboGears 2"
-
-#: erebot/templates/sidebars.html:48
-msgid "Valid XHTML 1.0"
-msgstr "Valid XHTML 1.0"
-
-#: erebot/templates/sidebars.html:49
-msgid "Validate now"
-msgstr "Validate now"
-
-#: erebot/templates/sidebars.html:53
-msgid "Project code hosted by aRiSE"
-msgstr "Project code hosted by aRiSE"
-
-#: erebot/templates/sidebars.html:59
-msgid "Erebot on Ohloh"
-msgstr "Erebot on Ohloh"
-
-#: erebot/templates/buildbot/index.html:13
-#: erebot/templates/root/development.html:13
-msgid "Participate in Erebot's development."
-msgstr "Participate in Erebot's development."
-
-#: erebot/templates/buildbot/index.html:24
-#: erebot/templates/root/development.html:24
-msgid ""
-"Most of the project's content (wiki, bug tracker, source repository)\n"
-"      is available [1:here]\n"
-"      (hosted by [2:aRiSE])."
-msgstr ""
-"Most of the project's content (wiki, bug tracker, source repository)\n"
-"      is available [1:here]\n"
-"      (hosted by [2:aRiSE])."
-
-#: erebot/templates/buildbot/index.html:30
-#: erebot/templates/root/development.html:30
-msgid ""
-"I'd like to personally thank all the members of aRiSE for their dedicated"
-"\n"
-"      work on a daily basis."
-msgstr ""
-"I'd like to personally thank all the members of aRiSE for their dedicated"
-"\n"
-"      work on a daily basis."
-
-#: erebot/templates/buildbot/index.html:35
-#: erebot/templates/root/development.html:35
-msgid ""
-"The latest version of Erebot's code is kept under Subversion and may\n"
-"        be checked out anonymously using the following command:"
-msgstr ""
-"The latest version of Erebot's code is kept under Subversion and may\n"
-"        be checked out anonymously using the following command:"
-
-#: erebot/templates/buildbot/index.html:45
 msgid "Documentation"
 msgstr "Documentation"
 
-#: erebot/templates/buildbot/index.html:47
-msgid ""
-"You can read the latest version of the documentation\n"
-"          [1:here]."
+#: erebot/templates/sidebars.html:27
+msgid "Developing Erebot"
+msgstr "Developing Erebot"
+
+#: erebot/templates/sidebars.html:29
+msgid "API documentation"
+msgstr "API documentation"
+
+#: erebot/templates/sidebars.html:30
+msgid "Roadmap"
+msgstr "Roadmap"
+
+#: erebot/templates/sidebars.html:31
+msgid "Bug Tracker"
+msgstr "Bug Tracker"
+
+#: erebot/templates/sidebars.html:32
+#, fuzzy
+msgid "Code repository"
+msgstr "SVN repository"
+
+#: erebot/templates/sidebars.html:33
+msgid "CI server"
 msgstr ""
-"You can read the latest version of the documentation\n"
-"          [1:here]."
 
-#: erebot/templates/buildbot/index.html:52
-msgid ""
-"You may also download it as a\n"
-"          [1:PDF manual]."
+#: erebot/templates/sidebars.html:34
+msgid "Namespaces"
+msgstr "Namespaces"
+
+#: erebot/templates/sidebars.html:41
+msgid "Other"
 msgstr ""
-"You may also download it as a\n"
-"          [1:PDF manual]."
 
-#: erebot/templates/buildbot/index.html:60
-msgid "Builbot status"
-msgstr "Builbot status"
+#: erebot/templates/sidebars.html:43
+msgid "TurboGears"
+msgstr "TurboGears"
 
-#: erebot/templates/buildbot/index.html:62
-#: erebot/templates/root/development.html:54
-msgid ""
-"You may track the buildbot status of the project\n"
-"          [1:here]."
-msgstr ""
-"You may track the buildbot status of the project\n"
-"          [1:here]."
+#: erebot/templates/sidebars.html:44
+msgid "Powered by TurboGears 2"
+msgstr "Powered by TurboGears 2"
 
-#: erebot/templates/buildbot/index.html:67
-msgid "Latest build status for trunk was:"
-msgstr "Latest build status for trunk was:"
+#: erebot/templates/sidebars.html:47
+msgid "Valid XHTML 1.0"
+msgstr "Valid XHTML 1.0"
+
+#: erebot/templates/sidebars.html:48
+msgid "Validate now"
+msgstr "Validate now"
+
+#: erebot/templates/sidebars.html:54
+#, fuzzy
+msgid "Erebot on OpenHub"
+msgstr "Erebot on Ohloh"
 
 #: erebot/templates/plop/index.html:13
 msgid "Python Logging On PHP"
@@ -298,112 +183,84 @@ msgid "What is PLOP?"
 msgstr "What is PLOP?"
 
 #: erebot/templates/plop/index.html:24
+#, fuzzy
 msgid ""
-"PLOP is a port of the Python logging module (which is itself a port of "
-"Java's log4j) on PHP."
+"PLOP was initially a port of the Python logging module (which is itself a"
+" port of Java's log4j) to PHP."
 msgstr ""
 "PLOP is a port of the Python logging module (which is itself a port of "
 "Java's log4j) on PHP."
 
 #: erebot/templates/plop/index.html:25
 msgid ""
-"The code is already featureful compared to other PHP logging systems and "
-"can be easily extended\n"
-"      to fit one's specific needs."
+"As time went by, the code was refactored to turn PLOP into an attractive "
+"alternative\n"
+"        to other PHP logging frameworks like Monolog or the Zend Log "
+"component."
 msgstr ""
-"The code is already featureful compared to other PHP logging systems and "
-"can be easily extended\n"
-"      to fit one's specific needs."
 
-#: erebot/templates/plop/index.html:32
-msgid "Differences from the Python API"
-msgstr "Differences from the Python API"
+#: erebot/templates/root/development.html:13
+msgid "Participate in Erebot's development."
+msgstr "Participate in Erebot's development."
 
-#: erebot/templates/plop/index.html:33
+#: erebot/templates/root/development.html:24
+#, fuzzy
 msgid ""
-"While most of the API is compatible between the Python logging module and"
-" PLOP,\n"
-"        there are a few differences listed below."
+"Most of the project's content (wiki, bug tracker, source repository)\n"
+"      is hosted on [1:GitHub]"
 msgstr ""
-"While most of the API is compatible between the Python logging module and"
-" PLOP,\n"
-"        there are a few differences listed below."
+"Most of the project's content (wiki, bug tracker, source repository)\n"
+"      is available [1:here]\n"
+"      (hosted by [2:aRiSE])."
 
-#: erebot/templates/plop/index.html:39
-msgid "See the associated ticket"
-msgstr "See the associated ticket"
-
-#: erebot/templates/plop/index.html:38
+#: erebot/templates/root/development.html:30
+#, fuzzy
 msgid ""
-"Parameters for handlers in the configuration file are not yet "
-"implemented.\n"
-"          \\[[1:#260]\\]"
+"The latest version of Erebot's code is available on github and may\n"
+"        be cloned using the following command:"
 msgstr ""
-"Parameters for handlers in the configuration file are not yet "
-"implemented.\n"
-"          \\[[1:#260]\\]"
+"The latest version of Erebot's code is kept under Subversion and may\n"
+"        be checked out anonymously using the following command:"
 
-#: erebot/templates/plop/index.html:41
-msgid "PLOP can also read its configuration from an XML file."
-msgstr "PLOP can also read its configuration from an XML file."
-
-#: erebot/templates/plop/index.html:42
+#: erebot/templates/root/development.html:35
 msgid ""
-"Not all handlers are supported by PLOP (especially the Windows Events Log"
-" handler)."
+"This will create a local repository with the core files required\n"
+"        to run Erebot."
 msgstr ""
-"Not all handlers are supported by PLOP (especially the Windows Events Log"
-" handler)."
 
-#: erebot/templates/plop/index.html:47
-msgid "Relation with Erebot"
-msgstr "Relation with Erebot"
+#: erebot/templates/root/development.html:39
+msgid "You may also be interested in checking out the code for"
+msgstr ""
 
-#: erebot/templates/plop/index.html:48
+#: erebot/templates/root/development.html:42
+msgid "other modules"
+msgstr ""
+
+#: erebot/templates/root/development.html:43
+msgid "Last but not least, the"
+msgstr ""
+
+#: erebot/templates/root/development.html:46
+#, fuzzy
+msgid "online documentation"
+msgstr "API documentation"
+
+#: erebot/templates/root/development.html:46
 msgid ""
-"PLOP is used on Erebot to provide logging features.\n"
-"        The XML configuration format is used.[1:]\n"
-"        You can find out more about this [2:here]."
+"contains additional information that you be useful to you,\n"
+"        like a list of required dependencies for Erebot."
 msgstr ""
-"PLOP is used on Erebot to provide logging features.\n"
-"        The XML configuration format is used.[1:]\n"
-"        You can find out more about this [2:here]."
 
-#: erebot/templates/root/development.html:47
+#: erebot/templates/root/development.html:53
+msgid "Travis-CI"
+msgstr ""
+
+#: erebot/templates/root/development.html:55
 msgid ""
-"The project uses [1:Buildbot]\n"
-"          to automatically generate a bunch of files from\n"
-"          the latest version of the code."
+"The project uses [1:Travis-CI]\n"
+"          to automatically test new commits and provide continuous "
+"integration."
 msgstr ""
-"The project uses [1:Buildbot]\n"
-"          to automatically generate a bunch of files from\n"
-"          the latest version of the code."
-
-#: erebot/templates/root/development.html:60
-msgid "Latest build status for the trunk:"
-msgstr "Latest build status for the trunk:"
-
-#: erebot/templates/root/development.html:67
-msgid "Generated files"
-msgstr "Generated files"
-
-#: erebot/templates/root/development.html:68
-msgid ""
-"Documentation ([1:Online] /\n"
-"            [2:PDF] /\n"
-"            [3:HTML in tarball])"
-msgstr ""
-"Documentation ([1:Online] /\n"
-"            [2:PDF] /\n"
-"            [3:HTML in tarball])"
-
-#: erebot/templates/root/development.html:72
-msgid "[1:Code coverage analysis]"
-msgstr "[1:Code coverage analysis]"
-
-#: erebot/templates/root/development.html:74
-msgid "[1:PEAR package]"
-msgstr "[1:PEAR package]"
 
 #: erebot/templates/root/index.html:12
 msgid "Erebot - PHP IRC bot"
@@ -568,4 +425,79 @@ msgstr "Namespace for PLOP"
 #: erebot/templates/xmlns/logging.html:12
 msgid "PLOP XML namespace"
 msgstr "PLOP XML namespace"
+
+#~ msgid "Only for people with the \"manage\" permission"
+#~ msgstr "Only for people with the \"manage\" permission"
+
+#~ msgid "success"
+#~ msgstr "success"
+
+#~ msgid "warnings"
+#~ msgstr "warnings"
+
+#~ msgid "failure"
+#~ msgstr "failure"
+
+#~ msgid "skipped"
+#~ msgstr "skipped"
+
+#~ msgid "exception"
+#~ msgstr "exception"
+
+#~ msgid "retry"
+#~ msgstr "retry"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Downloads"
+#~ msgstr "Downloads"
+
+#~ msgid "User manual"
+#~ msgstr "User manual"
+
+#~ msgid "Buildbot"
+#~ msgstr "Buildbot"
+
+#~ msgid "Partners"
+#~ msgstr "Partners"
+
+#~ msgid "Project code hosted by aRiSE"
+#~ msgstr "Project code hosted by aRiSE"
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Builbot status"
+#~ msgstr "Builbot status"
+
+#~ msgid "Latest build status for trunk was:"
+#~ msgstr "Latest build status for trunk was:"
+
+#~ msgid "Differences from the Python API"
+#~ msgstr "Differences from the Python API"
+
+#~ msgid "See the associated ticket"
+#~ msgstr "See the associated ticket"
+
+#~ msgid "PLOP can also read its configuration from an XML file."
+#~ msgstr "PLOP can also read its configuration from an XML file."
+
+#~ msgid "Relation with Erebot"
+#~ msgstr "Relation with Erebot"
+
+#~ msgid "Latest build status for the trunk:"
+#~ msgstr "Latest build status for the trunk:"
+
+#~ msgid "Generated files"
+#~ msgstr "Generated files"
+
+#~ msgid "[1:Code coverage analysis]"
+#~ msgstr "[1:Code coverage analysis]"
+
+#~ msgid "[1:PEAR package]"
+#~ msgstr "[1:PEAR package]"
+
+#~ msgid "Wrong credentials"
+#~ msgstr "Wrong credentials"
 

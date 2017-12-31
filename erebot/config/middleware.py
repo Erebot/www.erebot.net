@@ -3,7 +3,6 @@
 
 from erebot.config.app_cfg import base_config
 from erebot.config.environment import load_environment
-from repoze.who.plugins.testutil import make_middleware_with_config
 import logging
 
 __all__ = ['make_app']
@@ -33,13 +32,5 @@ def make_app(global_conf, full_stack=True, **app_conf):
 
     """
     app = make_base_app(global_conf, full_stack=True, **app_conf)
-    app = make_middleware_with_config(
-            app,
-            global_conf,
-            app_conf.get('who.config_file'),
-            None,
-            None,
-            skip_authentication=app_conf.get('skip_authentication'))
-    app.logger = logging.getLogger('auth')
     return app
 

@@ -22,7 +22,6 @@ errormiddleware.error_template = lambda *a: ""
 from tg.configuration import AppConfig
 
 import erebot
-from erebot import model
 from erebot.lib import app_globals, helpers
 
 base_config = AppConfig()
@@ -41,31 +40,7 @@ base_config.renderers.append('genshi')
 #base_config.renderers.append('chameleon_genshi')
 
 #Configure the base SQLALchemy Setup
-base_config.use_sqlalchemy = True
-base_config.model = erebot.model
-base_config.DBSession = erebot.model.DBSession
+base_config.use_sqlalchemy = False
 
 # Configure the authentication backend
-base_config.auth_backend = 'sqlalchemy'
-base_config.sa_auth.dbsession = model.DBSession
-# what is the class you want to use to search for users in the database
-base_config.sa_auth.user_class = model.User
-# what is the class you want to use to search for groups in the database
-base_config.sa_auth.group_class = model.Group
-# what is the class you want to use to search for permissions in the database
-base_config.sa_auth.permission_class = model.Permission
-
-# override this if you would like to provide a different who plugin for
-# managing login and logout of your application
-base_config.sa_auth.form_plugin = None
-
-# override this if you are using a different charset for the login form
-base_config.sa_auth.charset = 'utf-8'
-
-# You may optionally define a page where you want users to be redirected to
-# on login:
-base_config.sa_auth.post_login_url = '/post_login'
-
-# You may optionally define a page where you want users to be redirected to
-# on logout:
-base_config.sa_auth.post_logout_url = '/post_logout'
+base_config.auth_backend = None

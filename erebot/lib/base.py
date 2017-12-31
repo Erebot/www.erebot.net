@@ -6,7 +6,6 @@ from tg import TGController, tmpl_context
 from tg.render import render
 from tg import request
 from pylons.i18n import _, ungettext, N_
-import erebot.model as model
 
 __all__ = ['BaseController']
 

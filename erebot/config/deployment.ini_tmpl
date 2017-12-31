@@ -17,9 +17,6 @@ use = egg:Paste#http
 host = 0.0.0.0
 port = 8080
 
-[sa_auth]
-cookie_secret = ${app_instance_secret}
-
 [app:main]
 use = egg:Erebot
 full_stack = true
@@ -55,7 +52,7 @@ templating.genshi.method = xhtml
 # http://docs.python.org/lib/logging-config-fileformat.html
 
 [loggers]
-keys = root, erebot, sqlalchemy, auth
+keys = root, erebot, sqlalchemy
 
 [handlers]
 keys = console
@@ -80,13 +77,6 @@ qualname = sqlalchemy.engine
 # "level = INFO" logs SQL queries.
 # "level = DEBUG" logs SQL queries and results.
 # "level = WARN" logs neither.  (Recommended for production systems.)
-
-# A logger for authentication, identification and authorization -- this is
-# repoze.who and repoze.what:
-[logger_auth]
-level = WARN
-handlers =
-qualname = auth
 
 # If you create additional handlers, add them as a key to [handlers]
 [handler_console]

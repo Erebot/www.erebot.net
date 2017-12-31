@@ -7,17 +7,12 @@ from tg import expose
 
 # third party imports
 #from pylons.i18n import ugettext as _
-#from repoze.what import predicates
 
 # project specific imports
 from erebot.lib.base import BaseController
-#from erebot.model import DBSession, metadata
 
 
 class SampleController(BaseController):
-    #Uncomment this line if your controller requires an authenticated user
-    #allow_only = authorize.not_anonymous()
-    
     @expose('erebot.templates.index')
     def index(self):
         return dict(page='index')
