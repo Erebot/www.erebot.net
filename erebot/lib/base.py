@@ -25,6 +25,5 @@ class BaseController(TGController):
         # the request is routed to. This routing information is
         # available in environ['pylons.routes_dict']
 
-        request.identity = request.environ.get('repoze.who.identity')
-        tmpl_context.identity = request.identity
+        tmpl_context.identity = None
         return TGController.__call__(self, environ, start_response)
